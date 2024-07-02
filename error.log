@@ -1,0 +1,1 @@
+ERROR	2024/07/03 00:46:22 main.go:64: listen tcp: address 127.0.0.1$GO_SERVER_HOST_PORT: missing port in address
