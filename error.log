@@ -1,1 +1,22 @@
 ERROR	2024/07/03 00:46:22 main.go:64: listen tcp: address 127.0.0.1$GO_SERVER_HOST_PORT: missing port in address
+ERROR	2024/07/03 22:40:58 main.go:73: listen tcp: address 127.0.0.1$GO_SERVER_HOST_PORT: missing port in address
+ERROR	2024/07/03 22:41:12 handlers.go:28: open ui/html/pages/home.page.tmpl: The system cannot find the file specified.
+ERROR	2024/07/03 23:06:26 helpers.go:13: open ui/html/pages/home.page.tmpl: The system cannot find the file specified.
+goroutine 6 [running]:
+runtime/debug.Stack()
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0x5e
+main.(*application).serverError(0xc00002a150, {0x1276bd0, 0xc00012a000}, {0x1275180?, 0xc000102150?})
+	C:/Users/dhruv/GolandProjects/webServerGolangTutorial/cmd/web/helpers.go:12 +0x5d
+main.(*application).home(0xc00002a150, {0x1276bd0, 0xc00012a000}, 0x1ce44f70a28?)
+	C:/Users/dhruv/GolandProjects/webServerGolangTutorial/cmd/web/handlers.go:28 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000026a90?, {0x1276bd0?, 0xc00012a000?}, 0x1116c3a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0xed9219?, {0x1276bd0, 0xc00012a000}, 0xc000114000)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000102030?}, {0x1276bd0?, 0xc00012a000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000ce000, {0x1277290, 0xc000024db0})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+
